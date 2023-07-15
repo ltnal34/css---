@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>가상클래스</title>
+    <style>
+      a{text-decoration: none; color: black;}
+      /* 순서중요, 클래스 선택자 우선순위:10 */
+      a:link{color: blue;}
+      a;:visited{color: aqua;}
+      a:hover{color: yellow;}
+      a:active{color: red;}
+      a:focus{color: white;}
+
+      /* 하위 선택자 */
+      nav.gnb ul li a{color: green;}
+
+      /* 자식 선택자 */
+      nav.gnb> ul >li >a{color: green;}
+
+      /* nth-child */
+      nav.gnb>ul>li>ul>li{color: blue;}
+      nav.gnb>ul>li>ul>li:first-child{color: lightseagreen;}
+      nav.gnb>ul>li>ul>li:nth-child(2){color: purple;}
+      nav.gnb>ul>li>ul>li:nth-child(3){color: lightcoral;}
+      nav.gnb>ul>li>ul>li:last-child{color: black;}
+    </style>
+  </head>
+  <body>
+    <nav class="gnb">
+      <h2>주메뉴</h2>
+      <ul>
+        <li>
+          <a href="#">메뉴1</a>
+          <ul>
+            <li><a href="#">하위메뉴1-1</a></li>
+            <li><a href="#">하위메뉴1-2</a></li>
+            <li><a href="#">하위메뉴1-3</a></li>
+            <li><a href="#">하위메뉴1-4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">메뉴2</a>
+          <ul>
+            <li><a href="#">하위메뉴2-1</a></li>
+            <li><a href="#">하위메뉴2-2</a></li>
+            <li><a href="#">하위메뉴2-3</a></li>
+            <li><a href="#">하위메뉴2-4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">메뉴3</a>
+          <ul>
+            <li><a href="#">하위메뉴3-1</a></li>
+            <li><a href="#">하위메뉴3-2</a></li>
+            <li><a href="#">하위메뉴3-3</a></li>
+            <li><a href="#">하위메뉴3-4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">메뉴4</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

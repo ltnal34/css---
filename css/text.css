@@ -1,0 +1,40 @@
+/* text.css */
+.size {
+  font-size: 30px;
+}
+.family {
+  font-family: Dotum, "돋움", sans serif;
+}
+.weight {
+  font-weight: bold;
+}
+strong,
+h3 {
+  font-weight: normal;
+}
+.style {
+  font-style: italic;
+}
+em,
+address {
+  font-style: normal;
+}
+.variant {
+  font-variant: small-caps;
+}
+.line {
+  line-height: 300%;
+  font-size: 16px;
+}
+.indent {
+  text-indent: 50px;
+}
+.underline {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+}
+.align {
+  text-align: justify;
+}
